@@ -26,3 +26,35 @@ print(float(3), float(-1))
 
 print(3.1415926535897932384626433832795028841971)
 print(1.414213562373095048801688724209698)
+
+# arithmetic operations
+# + plus addition
+# - minus subtraction
+# * times multiplication
+# / divided by divsion
+# ** power exponetiation
+
+print(1+2, 3 - 4, 5* 6, 2 ** 5)
+
+# division in python 3
+# if one operand is a decimal (float), the answer is decimal
+
+print(1.0/3, 5.0/2.0, -7/3.0)
+
+# what happens when both numbers are integers
+
+print(1/3, 5/2, -7/3)
+
+# expressions - number or a binary operator applited to two expressions
+
+print(1+2*3, 4.0 - 5.0 / 6.0, 7*8 + 9 * 10)
+
+# expressions are entered as sequence of numbers and operators
+
+print(1 * 2 + 3 * 4)
+print(2 + 12)
+
+# always manually group using parantheses when in doubt
+
+print(1 * (2+3) *4)
+print(1 * 5 * 4) 
