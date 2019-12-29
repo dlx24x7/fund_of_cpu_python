@@ -2,6 +2,8 @@
 Practice Exercises for Expressions
 Week1_practice.py
 Dec 28 2019
+course: Python 3 scripting
+course: Fundamentals of computing
 """
 
 # Exercise 1: there are 5280 feet in a mile.   Write a python statement that calculates and prints the number of feet in 13 miles
@@ -32,3 +34,31 @@ width = 4
 height = 7
 perimeter = 2 * width + 2 * height
 print("The perimeter of a 4 by 7 inch rectangle is:", perimeter)
+
+# exercise 4: The area of a rectangle is width * height.  Write a pythone statement that calculates
+# the area of a rectangle that with a width of 4 inches and a height of 7 inches
+width = 4
+height = 7
+area = width * height
+print("The area of a 4 by 7 inch rectangle is:", area)
+
+# exercise 5: the circumference of a circle is 2 * PI * radius.  Assume PI is 3.14 and the radius is 8
+# what is the circumference of the triangle? 
+radius = 8
+PI = 3.14
+circumference = 2 * PI * radius
+print("The circumference of a circle with an 8 inch radius is:", circumference)
+
+# exercise 6: The area of a circle is PI * radius ** 2; what is the area of a circle
+radius = 8
+PI = 3.14
+circle_area = PI * (radius ** 2)
+print("The area of a cricle with an an inch radius is:", circle_area)
+
+# exercise 7: Given p dollars, the future value of this money when compounded yearly at a rate of r percent fo y years
+# is p(1 + 0.01*r)**y.  Write a statement that calculates the value of 1000 = principle 7 is the rate and 7 is the years
+principle = 1000
+rate = 7 
+year = 10 
+future_value = principle * (1 + (0.01 * rate)) ** 10
+print("With 1000 dollars and a 7 percent interest, in 10 years your money would be:", future_value)
