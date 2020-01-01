@@ -60,7 +60,7 @@ print("Ex 6: The area of a cricle with an an inch radius is:", circle_area)
 principle = 1000
 rate = 7 
 year = 10 
-future_value = principle * (1 + (0.01 * rate)) ** 10
+future_value = principle * (1 + (0.01 * rate)) ** year
 print("Ex 7: With 1000 dollars and a 7 percent interest, in 10 years your money would be:", future_value)
 
 # exercise 8: Write a python statement that combines three strings: My name is Joe and Warren
