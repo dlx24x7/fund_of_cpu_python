@@ -76,8 +76,23 @@ def name_tag(first_name, last_name):
     return name_tag
     
 # Ex 9
+def name_and_age(name, age): 
+    """
+    returns a string in the form of % is % years old using name and age
+    """
+    name_and_age = name + " is " + str(age) + " years old. "
+    return name_and_age
 
-
+# Ex 10
+def point_distance(x_0, y_0, x_1, y_1): 
+    """
+    returns the point dstance given x_0,x_1, y_0, y_1
+    """
+    x_dist = x_1 - x_0
+    y_dist = y_1 - x_0
+    point_distance = math.sqrt( (x_dist)**2 + (y_dist)**2)
+    return point_distance
+    
 # Input for Ex 1: miles_to_feet
 miles = 13
 print(str(miles) + " miles equals " + str(miles_to_feet(miles)) + " feet.")
