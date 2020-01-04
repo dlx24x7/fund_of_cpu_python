@@ -1,7 +1,12 @@
 """
 Week2_practice.py
 This program is about week 2 programming
+Author: ConradU 
+Date: 01/04/2020
 """
+import math
+PI = math.pi
+
 # Ex 1
 def miles_to_feet(miles):
     """
@@ -29,6 +34,49 @@ def rectangle_perimeter(width, height):
     """
     perimeter = 2 * width + 2 * height
     return perimeter
+    
+# Ex 4
+def rectangle_area(width, height): 
+    """
+    returns the rectangle area for a given width and height
+    """
+    area = width * height
+    return area
+    
+# Ex 5
+def circle_circumference(radius): 
+    """
+    returns the circle_circumference for a given radius
+    """
+    circumference = 2 * PI * radius
+    return circumference
+    
+# Ex 6
+def circle_area(radius): 
+    """
+    returns the area of the circle for a given radius
+    """
+    circle_area = PI * (radius ** 2)
+    return circle_area
+    
+# Ex 7
+def future_value(present_value, annual_rate, years): 
+    """
+    returns compounded future_value based on a present_value, annual_rate and years
+    """
+    future_value = present_value * (1 + (0.01 * annual_rate)) ** years
+    return future_value
+
+# Ex 8
+def name_tag(first_name, last_name): 
+    """
+    returns my name is when the strings are the firstname and lastname
+    """
+    name_tag = "My name is " + first_name + ' ' + last_name + "."
+    return name_tag
+    
+# Ex 9
+
 
 # Input for Ex 1: miles_to_feet
 miles = 13
