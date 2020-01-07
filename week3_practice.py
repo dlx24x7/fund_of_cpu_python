@@ -106,6 +106,21 @@ def name_lookup(first_name):
     else: 
         last_name = "Error: Not an instructor"
     return last_name
+
+# Ex 9: pig latin
+def pig_latin(word): 
+    """
+    takes a string world and apply the following rules to return the pig latin version of the word
+    """
+    first_letter = word[0]
+    rest_of_word = word[1 : ]
+    #print("First letter is", first_letter)
+    #print("rest_of_word is", rest_of_word)
+    if first_letter == 'a' or first_letter == 'e' or first_letter == 'i' or first_letter == 'o' or first_letter == 'u': 
+        pig_latin_word = word + 'way'
+    else: 
+        pig_latin_word = rest_of_word + first_letter + 'ay'
+    return pig_latin_word
     
 print("Is 1 even?", is_even(1))
 print("Is Joe cool?", is_cool("Joe"))
