@@ -122,6 +122,29 @@ def pig_latin(word):
         pig_latin_word = rest_of_word + first_letter + 'ay'
     return pig_latin_word
     
+# Ex 10 quadratic equation
+def smaller_root(a, b, c):
+    """
+    Takes numbers a, b and c and returns smaller solution to this equation if one exists
+    """
+    solution = None
+    discriminant = b**2 - 4*a*c
+    print("The discriminant is:", discriminant)
+    if discriminant < 0: 
+        print("Error: No real solutions")
+    elif discriminant == 0: 
+        solution = (-1 * b) / (2 * a)
+        print(" the solution is:", solution)
+    else: 
+        solution1 = ((-1 * b) + discriminant**0.5) / (2 * a)
+        solution2 = ((-1 * b) - discriminant**0.5) / (2 * a)
+        print("solution1", solution1)
+        print("solution2", solution2)
+        if solution1 < solution2: 
+            solution = solution1
+        else: 
+            solution = solution2
+    return solution
 print("Is 1 even?", is_even(1))
 print("Is Joe cool?", is_cool("Joe"))
 print(interval_intersect(1, 2, 0, 1))
