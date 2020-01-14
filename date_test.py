@@ -57,6 +57,34 @@ def is_valid_date(year, month, day):
         print("Invalid number of days in the month")
         return False
     return True
+def days_between(year1, month1, day1, year2, month2, day2): 
+    """
+    year1 0 integer representing year1
+    month1 integer representing month1
+    day1, year, representing day1
+    """"
+    if (is_valid_date(year1, month1, day1)):
+        print("Valid date1!")
+        valid_date1 = datetime.date(year1, month1, day1)
+        print("date1 is", valid_date1)
+    else:
+        print("Invalid date1!")
+        return 0
+    if (is_valid_date(year2, month2, day2)):
+        print("Valid date2!")
+        valid_date2 = datetime.date(year2, month2, day2)
+        print("date2 is", valid_date2)
+    else:
+        print("invalid date2!")
+        return 0
+    if (valid_date2 < valid_date1): 
+        print("error date2 earlier than date1!")
+        return 0 
+    else: 
+        days_between_dates = valid_date2 - valid_date1
+        print("days between dates is:", days_between_dates.days)
+        return days_between_dates
+    return 0 
 
 # Main Routine
 print ("Number of days in December 2019 is:", days_in_month(2019, 12))
